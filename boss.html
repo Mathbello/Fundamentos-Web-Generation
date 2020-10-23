@@ -24,24 +24,27 @@
 
         <div class="container mb-70">
             <div class= "form">
-                <h2 class="subtitle">Nos conte sua experiência</h2>
+                <h2 class="subtitle">Nos conte sua experiencia</h2>
                 <form>
                     <label for="name">Nome:</label><br>
-                    <input type="text" id="name" placeholder="Diddy Kong">
-                    <br><br>
+                    <input type="text" id="name" placeholder="Diddy Kong" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
+                    <br>
                     <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email" placeholder="diddy@kong.com">
-                    <br><br>
+                    <input type="email" name="email" id="email" placeholder="diddy@kong.com" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
+                    <br>
                     <label for="boss">Boss:</label><br>
-                    <textarea name="boss" id="boss" cols="30" rows="5" placeholder="O mestre do mundo 2 foi muito difícil"></textarea>
-                    <br><br>
+                    <textarea name="boss" id="boss" cols="30" rows="5" placeholder="O mestre do mundo 2 foi muito difícil" onkeyup="validaBoss()"></textarea>
+                    <div id="txtBoss"></div>
+                    <br>
                     <label>Modo de Jogo</label><br>
                     <input type="radio" id="single" name="modo" value="singlePlayer">
                     <label for="single">SinglePlayer</label><br>
                     <input type="radio" id="multi" name="modo" value="multiPlayer">
                     <label for="multi">Multiplayer</label><br>
                     <br>
-                    <button>Enviar</button>
+                    <button onclick= "enviar()">Enviar</button>
                 </form>
             </div>
 
@@ -51,9 +54,9 @@
                 <p>Av. Paulista, 1941 - Loja 86</p>
                 <p>Bela Vista - SP</p>
             
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117008.01172809865!2d-46.56713518486898!3d-23.586381497862913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c88780d9d1%3A0xd947867ab7782a09!2sGame%20Center%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1603313367313!5m2!1spt-BR!2sbr" 
+                <iframe id= "maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117008.01172809865!2d-46.56713518486898!3d-23.586381497862913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c88780d9d1%3A0xd947867ab7782a09!2sGame%20Center%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1603313367313!5m2!1spt-BR!2sbr" 
                     width="400" height="250" frameborder="0" style="border:0;" 
-                    allowfullscreen="" aria-hidden="false" tabindex="0">
+                    allowfullscreen="" aria-hidden="false" tabindex="0" onmouseover="mapZoom()" onmouseout="mapNormal()">
                 </iframe>
             </div>
         </div>
@@ -81,6 +84,8 @@
         </footer>
     
     </main>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
