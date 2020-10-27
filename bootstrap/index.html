@@ -6,11 +6,17 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
 <body>
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="assets/img/funko.png" alt="Logo Funko" style="width: 90px; height: 30px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,22 +26,21 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#produtos">Produtos</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
+
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#quemSomos">Quem Somos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#form">Lojas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#midias">Midias</a>
           </li>
         </ul>
       </div>
@@ -43,19 +48,19 @@
     <!-- /Menu -->
 
     <!-- Carrossel -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade shadow-lg" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/aladdin.jpg" alt="Funko Pop Aladdin">
+          <img class="d-block w-100" src="assets/img/aladdin.jpg" alt="Funko Pop Aladdin">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/familiaAdams.jpg" alt="Funko Pop Familia Adams">
+          <img class="d-block w-100" src="assets/img/familiaAdams.jpg" alt="Funko Pop Familia Adams">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/harry.jpg" alt="Funko Pop Harry Potter">
+          <img class="d-block w-100" src="assets/img/harry.jpg" alt="Funko Pop Harry Potter">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/hercules.jpg" alt="Funko Pop Hercules">
+          <img class="d-block w-100" src="assets/img/hercules.jpg" alt="Funko Pop Hercules">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -70,9 +75,9 @@
     <!-- /Carrosel -->
 
     <!-- Jumbotrom -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid bg-primary">
       <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center text-white">
           <div class="col-6">
             <h2 class="mb-3">
               Animação Funko Star Wars
@@ -98,68 +103,120 @@
     <!-- /Jumbotrom -->
 
     <!-- Cards -->
-    <div class="container">
-      <div class="card-columns">
-        <div class="card">
-          <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-            <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+    <div class="container mb-5" id="produtos">
+      <h2 class="text-center mt-5 mb-5">
+        Alguns de nossos produtos
+      </h2>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/it.jpg" alt="Chaveiro IT A coisa">
+              <div class="card-body">
+                <h5 class="card-title">IT Keychain</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card p-3">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/naruto.jpg" alt="Naruto Keychain">
+              <div class="card-body">
+                <h5 class="card-title">Naruto Keychain</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-            <footer class="blockquote-footer">
-              <small>
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/genio.jpg" alt="Genio Aladdin">
+              <div class="card-body">
+                <h5 class="card-title">Genio Aladdin</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img" src=".../100px260/" alt="Imagem do card">
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/bobRoss.jpg" alt="Bob Ross Vinyl">
+              <div class="card-body">
+                <h5 class="card-title">Bob Ross Vinyl</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-              </small>
-            </footer>
-          </blockquote>
+
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/soda.jpg" alt="Soda Refri">
+              <div class="card-body">
+                <h5 class="card-title">Funko Sodas</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/ramona.jpg" alt="Ramona">
+              <div class="card-body">
+                <h5 class="card-title">Ramona Vinyl</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/wonderWoman.jpg" alt="Wonder Woman">
+              <div class="card-body">
+                <h5 class="card-title">Wonder Woman</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/joker.jpg" alt="Joker">
+              <div class="card-body">
+                <h5 class="card-title">Joker</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/deadpool.jpg" alt="Deadpool">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool vs. Kable</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,20 +224,23 @@
     <!-- Cards -->
 
     <!-- Jumbotrom -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+    <div class="jumbotron jumbotron-fluid bg-primary" id="quemSomos">
+      <div class="container text-white">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-6">
             <h2 class="mb-3">
-              Nossa Localização
+              Quem Somos
             </h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur dolores iusto quo a illum cum quae, ut, 
-              nemo ad quis eius officia earum eum culpa dolorem commodi quibusdam ducimus quos.
+              Funko Inc. é uma empresa americana que fabrica figuras colecionáveis da cultura pop. 
+              A Funko é mais conhecida por produzir pequenas estatuetas de vinil licenciadas e bobbleheads. 
+              Além disso, a Funko produz bonecos de pelúcia também licenciados, figuras de ação e itens eletrônicos, 
+              como unidades USB, lâmpadas e fones de ouvido.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dignissimos earum debitis at illum dolor 
-              commodi ut ullam, iure pariatur omnis ab veniam alias voluptatum numquam, quod vero dicta nulla.
+              Fundada em 1998 por Mike Becker, a empresa foi originalmente concebida como um pequeno projeto para criar 
+              vários brinquedos de baixa tecnologia e temas nostálgicos. O primeiro bobblehead fabricado pela Funko foi 
+              o ícone de publicidade do restaurante Big Boy.
             </p>
           </div>
           <div class="col-6">
@@ -194,7 +254,7 @@
     <!-- /Jumbotrom -->
 
     <!-- Form Pedidos -->
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5" id="form">
       <div class="row">
         <div class="col-6 d-flex flex-column justify-content-center">
 
@@ -202,60 +262,45 @@
             Lojas Funko
           </h3>
           <p>
+            Nos diga onde você deseja que tenha uma nova loja da Funko!
+          </p>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga omnis voluptatum alias, 
             placeat fugiat eveniet sed. Distinctio voluptatem reiciendis deleniti, incidunt libero rerum neque 
             eius odio delectus, perferendis, voluptate eum.
           </p>
 
-          <img class="w-25 mt-5" src="assets/funko.png" alt="Logo Funko">
+          <img class="w-25 mt-5" src="assets/img/funko.png" alt="Logo Funko">
         </div>
   
         <div class="col-6">
           <form>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+              <div class="form-group col-md-12">
+                <label for="inputName">Nome</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nome" onkeyup="validaNome()">
               </div>
             </div>
             <div class="form-group">
               <label for="inputAddress">Endereço</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-            </div>
-            <div class="form-group">
-              <label for="inputAddress2">Endereço 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0" onkeyup="validaEndereco()">
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-8">
                 <label for="inputCity">Cidade</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" class="form-control" id="inputCity" onkeyup="validaCidade()">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputEstado">Estado</label>
-                <select id="inputEstado" class="form-control">
+                <select id="inputEstado" class="form-control" onclick="validaEstado()">
                   <option selected>Escolher...</option>
-                  <option>...</option>
+                  <option>MG</option>
+                  <option>RJ</option>
+                  <option>SP</option>
                 </select>
               </div>
-              <div class="form-group col-md-2">
-                <label for="inputCEP">CEP</label>
-                <input type="text" class="form-control" id="inputCEP">
-              </div>
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Clique em mim
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-outline-primary" onclick="enviar()">Enviar</button>
           </form>
         </div>
       </div>
@@ -263,17 +308,17 @@
     <!-- /Form Pedidos -->
 
     <!-- Footer -->
-    <div class="col-12 pt-5 pb-4 bg-dark d-flex flex-column justify-content-center align-items-center">
+    <div class="col-12 pt-5 pb-4 bg-dark d-flex flex-column justify-content-center align-items-center" id="midias">
       <div class="row">
-        <a href="">
+        <a href="https://www.facebook.com/originalfunko" target="_blank">
           <i class="fa fa-facebook-square m-2" aria-hidden="true" style="color: #1877f2; font-size: 40px;"></i>
         </a>
   
-        <a href="">
+        <a href="https://www.instagram.com/originalfunko/" target="_blank">
           <i class="fa fa-instagram m-2" aria-hidden="true" style="color: #cb4bb2; font-size: 40px;"></i>
         </a>
   
-        <a href="">
+        <a href="https://www.youtube.com/channel/UCiBxZWamaDdlemljJ3aGPZQ" target="_blank">
           <i class="fa fa-youtube-play m-2" aria-hidden="true" style="color: #ff0000; font-size: 40px;"></i>
         </a>
       </div>
@@ -288,5 +333,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
